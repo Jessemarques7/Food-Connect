@@ -1,0 +1,12 @@
+@import "../index.scss";
+
+.container {
+  padding-left: 0;
+  margin: 20px 40px;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+  grid-template-rows: 1fr 1fr; /* 2 linhas iguais */
+  gap: 30px; /* Espaço entre as células */
+}

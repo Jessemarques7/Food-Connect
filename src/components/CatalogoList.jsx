@@ -1,5 +1,6 @@
-import Product from "./Product";
-import styles from "./ProductsList.module.scss";
+import CatalogoProduct from "./CatalogoProduct";
+
+import styles from "./CatalogoList.module.scss";
 
 const InitialProducts = [
   {
@@ -40,14 +41,14 @@ const InitialProducts = [
   },
 ];
 
-function ProductsList() {
+function CatalogoList() {
   return (
-    <ul className={styles.container}>
+    <div className={styles.container}>
       {InitialProducts.map((product) => (
-        <Product key={product.name} product={product} />
+        <CatalogoProduct key={product.name} product={product} />
       ))}
-    </ul>
+    </div>
   );
 }
 
-export default ProductsList;
+export default CatalogoList;

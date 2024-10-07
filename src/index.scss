@@ -20,3 +20,24 @@ body {
   margin: 0;
   display: flex;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track sss*/
+::-webkit-scrollbar-track {
+  background: $dark-blue-800;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $dark-blue-700;
+  border-radius: 999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7d86b6;
+}
