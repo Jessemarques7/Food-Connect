@@ -1,0 +1,22 @@
+$dark-blue-900: #2d3250;
+$dark-blue-800: #424769;
+$dark-blue-700: #676f9d;
+$light-blue-300: #c5c9e1;
+$yellow-800: #f9b17a;
+$light-gray-300: #c3bfbf;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark-blue-900;
+  margin: 0;
+  display: flex;
+}

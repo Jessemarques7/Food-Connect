@@ -1,0 +1,64 @@
+@import "../index.scss";
+.container {
+  padding: 2.5rem; /* p-10 */
+  width: 100%; /* w-full */
+  display: flex; /* flex */
+  justify-content: center; /* justify-center */
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border-left: 1px solid rgba(255, 255, 255, 0.414);
+}
+.main {
+  position: relative; /* relative */
+  max-width: 833px; /* max-w-[833px] */
+  width: 100%; /* w-full */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.input {
+  width: 100%;
+  display: flex; /* flex */
+  height: 2.5rem; /* h-10 */
+  width: 100%; /* w-full */
+  border-radius: 25px; /* rounded-md */
+  border-width: 1px; /* border */
+  border: none;
+  background-color: $dark-blue-700; /* bg-background-light */
+  font-size: 0.875rem; /* text-sm */
+
+  color: #fff; /* text-gray */
+  padding: 1.5rem; /* p-6 */
+  outline-offset: 2px; /* focus-visible:ring-offset-2 */
+}
+
+.input::placeholder {
+  color: #9ca3af; /* placeholder:text-gray */
+}
+
+.input:focus-visible {
+  outline: none; /* focus-visible:ring-background-light */
+}
+
+.input:disabled {
+  cursor: not-allowed; /* disabled:cursor-not-allowed */
+  opacity: 0.5; /* disabled:opacity-50 */
+}
+
+.button {
+  position: absolute; /* absolute */
+  right: 1.5rem; /* right-6 */
+  top: 50%; /* top-1/2 */
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  cursor: pointer; /* cursor-pointer */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+}
+
+.button button {
+  border: none;
+  background-color: transparent;
+}
