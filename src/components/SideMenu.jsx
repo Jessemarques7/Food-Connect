@@ -15,7 +15,7 @@ function SideMenu() {
           <NavLink to={"/catalogo"}>Catalogo</NavLink>
         </li>
         <li>
-          <NavLink to={"/inventario"}>Carrinho</NavLink>
+          <NavLink to={"/inventario"}>Inventario</NavLink>
         </li>
         <li>
           <NavLink to={"/chat"}>Parceiros</NavLink>

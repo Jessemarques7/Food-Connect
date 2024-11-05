@@ -5,32 +5,32 @@ function FriendsList() {
   const initialFriends = [
     {
       id: 118836,
-      name: "João da Padaria dos Amigos",
+      name: "Clark",
       image: "https://i.pravatar.cc/48?u=118516",
     },
     {
       id: 933372,
-      name: "Amanda's Restaurant",
+      name: "Amanda",
       image: "https://i.pravatar.cc/48?u=499784",
     },
     {
       id: 499476,
-      name: "Marcos Doces",
+      name: "Mark",
       image: "https://i.pravatar.cc/48?u=499321",
     },
     {
       id: 115736,
-      name: "Stephanie Bolos",
+      name: "Stephanie",
       image: "https://i.pravatar.cc/48?u=118769",
     },
     {
       id: 926372,
-      name: "Sarah Massas",
+      name: "Sarah",
       image: "https://i.pravatar.cc/48?u=933372",
     },
     {
       id: 484476,
-      name: "Anthony do Norte",
+      name: "Anthony",
       image: "https://i.pravatar.cc/48?u=499476",
     },
   ];
