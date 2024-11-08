@@ -20,6 +20,9 @@ function SideMenu() {
         <li>
           <NavLink to={"/chat"}>Parceiros</NavLink>
         </li>
+        <li>
+          <NavLink to={"/sobre"}>Sobre</NavLink>
+        </li>
       </ul>
     </nav>
   );
