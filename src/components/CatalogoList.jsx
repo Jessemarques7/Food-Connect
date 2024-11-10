@@ -1,8 +1,7 @@
 import CatalogoProduct from "./CatalogoProduct";
-
 import styles from "./CatalogoList.module.scss";
 
-const InitialProducts = [
+export const InitialProducts = [
   {
     name: "Arroz",
     image: "../src/assets/arroz.jpeg",
@@ -41,11 +40,15 @@ const InitialProducts = [
   },
 ];
 
-function CatalogoList() {
+function CatalogoList({ products = InitialProducts, onAddToCart }) {
   return (
     <div className={styles.container}>
-      {InitialProducts.map((product) => (
-        <CatalogoProduct key={product.name} product={product} />
+      {products.map((product) => (
+        <CatalogoProduct
+          key={product.name}
+          product={product}
+          onAddToCart={onAddToCart}
+        />
       ))}
     </div>
   );

@@ -1,15 +1,33 @@
-@import "../index.scss";
-
+/* Inventario.module.scss */
 .main {
   display: flex;
+<<<<<<< HEAD
   // width: 100vw;
   // height: 100vh;
+=======
+>>>>>>> aea1b6af6f48b14949bb5c3237a805398b04eb71
 }
 
 .container {
-  background-color: $dark-blue-800;
+  flex: 1;
   display: flex;
-  margin: 30px;
-  width: 100%;
-  border-radius: 30px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cartItem {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: 255, 255, 255, 30%;
+}
+
+.cartItem img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
 }
