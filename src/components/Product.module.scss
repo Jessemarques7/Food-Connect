@@ -1,0 +1,27 @@
+@import "../index.scss";
+
+.container {
+  display: flex;
+  background-color: $dark-blue-700;
+  width: 100%;
+  border-radius: 15px;
+  margin: 20px 0;
+
+  img {
+    height: 90px;
+    width: 90px;
+    border-radius: 15px;
+  }
+
+  div {
+    margin-left: 30px;
+  }
+
+  h3 {
+    margin: 5px;
+  }
+
+  p {
+    margin: 5px;
+  }
+}

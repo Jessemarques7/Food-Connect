@@ -1,0 +1,19 @@
+@import "../index.scss";
+
+.main {
+  background-image: url(/src/assets/main-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(45, 50, 80, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  display: flex;
+  margin: 30px;
+  border-radius: 30px;
+  width: 100%;
+}
