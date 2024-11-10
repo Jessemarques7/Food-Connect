@@ -1,5 +1,8 @@
+import { useForm } from "react-hook-form";
+import Modal from "./Modal";
 import Product from "./Product";
 import styles from "./ProductsList.module.scss";
+import { useState } from "react";
 
 const InitialProducts = [
   {
@@ -41,9 +44,72 @@ const InitialProducts = [
 ];
 
 function ProductsList() {
+  const { register, handleSubmit } = useForm();
+
+  const [listaProdutos, setListaProduto] = useState(InitialProducts);
+  //**Apagamos a função cadCliente */
+  function inserirProduto(Produtos) {
+    //**Apagamos o e.preventDefault */
+    setListaProduto([...listaProdutos, Produtos]);
+  }
   return (
     <ul className={styles.container}>
-      {InitialProducts.map((product) => (
+      <div className={styles.head}>
+        <Modal>
+          <Modal.Open opens="produto">
+            <button className={styles.button}>Add produto</button>
+          </Modal.Open>
+          <Modal.Window name="produto">
+            <div className={styles.formContainer}>
+              <form onSubmit={handleSubmit(inserirProduto)}>
+                <fieldset>
+                  <legend>Dados do produto</legend>
+                  <label>
+                    Nome:
+                    <input
+                      className={styles.input}
+                      type="text"
+                      {...register("name")}
+                    />
+                  </label>
+                  <label>
+                    Quantidade:
+                    <input
+                      className={styles.input}
+                      type="text"
+                      {...register("quantidade")}
+                    />
+                  </label>
+                  <label>
+                    Descrição:
+                    <input
+                      className={styles.input}
+                      type="text"
+                      {...register("description")}
+                    />
+                  </label>
+                  <label>
+                    Imagem:
+                    <input
+                      className={styles.FileInput}
+                      type="file"
+                      id="image"
+                      accept="image/*"
+                      {...register("image")}
+                    />
+                  </label>
+                  <div className={styles.bottom}>
+                    <button className={styles.button} type="submit">
+                      Adicionar
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </Modal.Window>
+        </Modal>
+      </div>
+      {listaProdutos.map((product) => (
         <Product key={product.name} product={product} />
       ))}
     </ul>

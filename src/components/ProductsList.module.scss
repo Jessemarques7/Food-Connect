@@ -1,5 +1,85 @@
+@import "../index.scss";
+
 .container {
   padding-left: 0;
   margin: 20px 40px;
   width: 100%;
+}
+
+.button {
+  background-color: $yellow-800;
+  padding: 10px;
+  border-radius: 10px;
+  color: $dark-blue-900;
+  font-weight: bold;
+}
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.formContainer {
+  display: flex;
+  form {
+    display: flex;
+
+    fieldset {
+      min-width: 50vw;
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+
+      label {
+        display: flex;
+
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+
+        .input {
+          background-color: $dark-blue-700;
+          margin-top: 10px;
+          border: 0;
+          padding: 10px;
+          border-radius: 20px;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.FileInput {
+  font-size: 1.4rem;
+  border-radius: var(--border-radius-sm);
+  margin-top: 10px;
+  border: 0;
+
+  display: flex;
+
+  &::file-selector-button {
+    font: inherit;
+    padding: 10px;
+    border-radius: 20px;
+
+    margin-right: 1.2rem;
+
+    border: 1px solid grey;
+    color: white;
+
+    background-color: $dark-blue-700;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.2s;
+
+    &:hover {
+      background-color: var(--color-brand-700);
+    }
+  }
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

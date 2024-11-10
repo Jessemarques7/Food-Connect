@@ -1,7 +1,7 @@
 import Friend from "./Friend";
 import styles from "./FriendsList.module.scss";
 
-function FriendsList() {
+function FriendsList({ selectedFriend, setSelectedFriend }) {
   const initialFriends = [
     {
       id: 118836,
@@ -38,7 +38,12 @@ function FriendsList() {
   return (
     <div className={styles.list}>
       {initialFriends.map((friend) => (
-        <Friend key={friend.id} friend={friend} />
+        <Friend
+          key={friend.id}
+          friend={friend}
+          selectedFriend={selectedFriend}
+          setSelectedFriend={setSelectedFriend}
+        />
       ))}
     </div>
   );
