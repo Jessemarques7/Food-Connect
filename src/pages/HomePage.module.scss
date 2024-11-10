@@ -1,5 +1,6 @@
 @import "../index.scss";
 
+<<<<<<< HEAD
 body {
   display: inline !important;
 }
@@ -83,10 +84,20 @@ li button {
 }
 
 .bannerPrincipal {
+=======
+.main {
+  background-image: url(/src/assets/main-background.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+>>>>>>> 8a59b6378660fb1ba179961e62ac0be6cc579814
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   height: 44rem;
 }
 
@@ -202,3 +213,23 @@ ul li img {
   font-weight: 500;
 }
 
+=======
+
+  h1 {
+    color: $light-gray-300;
+    text-transform: uppercase;
+    font-size: 90px;
+    margin-top: 0;
+  }
+
+  button {
+    color: $light-gray-300;
+    font-size: 72px;
+    border-radius: 20px;
+    padding: 0 80px;
+    border: none;
+    background-color: rgba(255, 255, 255, 30%);
+    cursor: pointer;
+  }
+}
+>>>>>>> 8a59b6378660fb1ba179961e62ac0be6cc579814

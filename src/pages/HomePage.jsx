@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import styles from "./HomePage.module.scss";
 import { NavLink } from "react-router-dom";
+=======
+import { NavLink } from "react-router-dom";
+import styles from "./HomePage.module.scss";
+>>>>>>> 8a59b6378660fb1ba179961e62ac0be6cc579814
 
 function HomePage() {
   return (
     <main className={styles.main}>
+<<<<<<< HEAD
       <header className={styles.cabecalho}>
         <NavLink to={"/"} className={styles.logo}>
           <div>
@@ -64,6 +70,12 @@ function HomePage() {
           </li>
         </ul>
       </section>
+=======
+      <h1>Food Connect</h1>
+      <NavLink to={"catalogo"}>
+        <button>Começar &rarr;</button>
+      </NavLink>
+>>>>>>> 8a59b6378660fb1ba179961e62ac0be6cc579814
     </main>
   );
 }

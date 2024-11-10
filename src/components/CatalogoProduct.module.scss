@@ -1,5 +1,18 @@
 @import "../index.scss";
 
+<<<<<<< HEAD
+=======
+.linkContainer {
+  text-decoration: none;
+  color: inherit;
+  
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+}
+
+>>>>>>> 8a59b6378660fb1ba179961e62ac0be6cc579814
 .container {
   display: flex;
   background-color: $dark-blue-700;
