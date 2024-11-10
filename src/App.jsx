@@ -5,6 +5,7 @@ import Catalogo from "./pages/Catalogo";
 import Inventario from "./pages/Inventario";
 import Chat from "./pages/Chat";
 import Registro from "./pages/Registro";
+import Sobre from "./pages/Sobre"
 
 function App() {
   const [cart, setCart] = useState([]); // Estado global do carrinho
@@ -22,6 +23,7 @@ function App() {
         <Route path="/inventario" element={<Inventario cart={cart} />} />
         <Route path="chat" element={<Chat />} />
         <Route path="registro" element={<Registro />} />
+        <Route path="sobre" element={<Sobre />} />
       </Routes>
     </BrowserRouter>
   );
