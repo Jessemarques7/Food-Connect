@@ -33,10 +33,7 @@ function ChatFriend() {
           </form>
           <div className={styles.button}>
             <button>
-              <img
-                alt="Icone de envia de mensagens"
-                src={"src/assets/send-icon.svg"}
-              />
+              <img alt="Icone de envia de mensagens" src={"/send-icon.svg"} />
             </button>
           </div>
         </div>
