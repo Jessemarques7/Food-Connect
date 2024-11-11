@@ -7,37 +7,37 @@ import { useState } from "react";
 const InitialProducts = [
   {
     name: "Arroz",
-    image: "../src/assets/arroz.jpeg",
+    image: "/arroz.jpeg",
     quantidade: "1 kg",
     description: "Grão básico e nutritivo.",
   },
   {
     name: "Feijão",
-    image: "../src/assets/feijao.jpeg",
+    image: "/feijao.jpeg",
     quantidade: "500 g",
     description: "Fonte de proteína e fibras.",
   },
   {
     name: "Macarrão",
-    image: "../src/assets/macarrao.jpeg",
+    image: "/macarrao.jpeg",
     quantidade: "500 g",
     description: "Versátil e fácil de armazenar.",
   },
   {
     name: "Leite em pó",
-    image: "../src/assets/leitepo.jpeg",
+    image: "/leitepo.jpeg",
     quantidade: "400 g",
     description: "Fonte de cálcio e proteínas.",
   },
   {
     name: "Farinha",
-    image: "../src/assets/farinha.jpeg",
+    image: "/farinha.jpeg",
     quantidade: "200 g",
     description: "Fonte de fibras e fácil de armazenar.",
   },
   {
     name: "Biscoitos",
-    image: "../src/assets/biscoito.jpeg",
+    image: "/biscoito.jpeg",
     quantidade: "300 g",
     description: "Lanche prático e energético.",
   },

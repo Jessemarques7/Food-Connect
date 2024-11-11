@@ -78,7 +78,7 @@ function HomePage() {
           </p>
           <ul className={styles.pilarLista}>
             <li className={styles.lista}>
-              <img src="/src/assets/conexao.jpg" alt="conexão" />
+              <img src="/conexao.jpg" alt="conexão" />
               <h4 className={styles.listaTitulo}>Conexão</h4>
               <p>
                 Conectamos aqueles que querem ajudar com instituições que
@@ -86,7 +86,7 @@ function HomePage() {
               </p>
             </li>
             <li className={styles.lista}>
-              <img src="/src/assets/educacao.jpg" alt="educação nutricional" />
+              <img src="/educacao.jpg" alt="educação nutricional" />
               <h4 className={styles.listaTitulo}>Educação Nutricional</h4>
               <p>
                 Conhecimento para o máximo aproveitamento nutricional dos
@@ -94,7 +94,7 @@ function HomePage() {
               </p>
             </li>
             <li className={styles.lista}>
-              <img src="/src/assets/concientizacao.jpg" alt="concientização" />
+              <img src="/concientizacao.jpg" alt="concientização" />
               <h4 className={styles.listaTitulo}>Concientização</h4>
               <p>
                 O Brasil que desperdiça alimentos precisa conhecer o Brasil que
