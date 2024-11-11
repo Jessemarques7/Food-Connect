@@ -63,7 +63,7 @@ function HomePage() {
             </NavLink>
           </div>
           <img
-            src={"/src/assets/main.jpeg"}
+            src={"/main.jpeg"}
             alt="imagem de frutas"
             className={styles.bannerImg}
           />
