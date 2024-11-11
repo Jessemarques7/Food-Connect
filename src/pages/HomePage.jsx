@@ -36,7 +36,9 @@ function HomePage() {
           </p>
           <div className={styles.video}>
             <iframe
-              src="https://www.youtube.com/embed/O_kIaj_Sruk?list=WL"
+              width="996"
+              height="560"
+              src="https://www.youtube.com/embed/-OyIoixf4aI"
               title="Food connect"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
