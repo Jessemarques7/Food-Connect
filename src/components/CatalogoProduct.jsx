@@ -17,7 +17,7 @@ function CatalogoProduct({ product, onAddToCart }) {
     onAddToCart(product, quantity);
 
     // Navega para a página de carrinho (Inventario) passando a quantidade selecionada
-    navigate("/inventario", {
+    navigate("/carrinho", {
       state: { cartItem: { ...product, quantity } },
     });
   };
@@ -32,12 +32,15 @@ function CatalogoProduct({ product, onAddToCart }) {
       {isClicked && (
         <div>
           <input
+            className={styles.input}
             type="number"
             value={quantity}
             onChange={(e) => setQuantity(Number(e.target.value))}
             min="1"
           />
-          <button onClick={handleAddToCart}>Adicionar ao Carrinho</button>
+          <button className={styles.add} onClick={handleAddToCart}>
+            Adicionar ao Carrinho
+          </button>
         </div>
       )}
     </div>

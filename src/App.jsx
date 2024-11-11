@@ -4,8 +4,8 @@ import HomePage from "./pages/HomePage";
 import Catalogo from "./pages/Catalogo";
 import Inventario from "./pages/Inventario";
 import Chat from "./pages/Chat";
-import Registro from "./pages/Registro";
-import Sobre from "./pages/Sobre"
+import Sobre from "./pages/Sobre";
+import Carrinho from "./pages/Carrinho";
 
 function App() {
   const [cart, setCart] = useState([]); // Estado global do carrinho
@@ -19,11 +19,14 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="catalogo" element={<Catalogo onAddToCart={handleAddToCart} />} />
-        <Route path="/inventario" element={<Inventario cart={cart} />} />
+        <Route
+          path="catalogo"
+          element={<Catalogo onAddToCart={handleAddToCart} />}
+        />
+        <Route path="/Carrinho" element={<Carrinho cart={cart} />} />
         <Route path="chat" element={<Chat />} />
-        <Route path="registro" element={<Registro />} />
         <Route path="sobre" element={<Sobre />} />
+        <Route path="inventario" element={<Inventario />} />
       </Routes>
     </BrowserRouter>
   );

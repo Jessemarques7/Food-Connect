@@ -13,6 +13,11 @@ function HomePage() {
           </NavLink>
           <ul className={styles.loginBotoes}>
             <li>
+              <NavLink to={"/sobre"} className={styles.sobreContainer}>
+                <div className={styles.sobre}>| SOBRE NOS </div>
+              </NavLink>
+            </li>
+            <li>
               <NavLink to={"/inventario"} className={styles.linkLogin}>
                 <button className={styles.doador}>Doador</button>
               </NavLink>

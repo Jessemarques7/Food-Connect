@@ -51,6 +51,10 @@ button {
   display: flex;
   gap: 2rem;
   padding-right: 2rem;
+  li {
+    display: flex;
+    text-decoration: none;
+  }
 }
 
 .linkLogin {
@@ -68,6 +72,19 @@ li button {
 
 .doador {
   background-color: $dark-blue-700;
+}
+
+.sobreContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre {
+  color: $dark-blue-900;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .doador:hover {
@@ -213,4 +230,8 @@ ul li img {
   margin: 0;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }
