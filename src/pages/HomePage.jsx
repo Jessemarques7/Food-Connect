@@ -36,12 +36,12 @@ function HomePage() {
           </p>
           <div className={styles.video}>
             <iframe
-              src="https://www.youtube.com/embed/WH6P9Safct4"
-              title="17 de maio de 2024"
+              src="https://www.youtube.com/embed/O_kIaj_Sruk?list=WL"
+              title="Food connect"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+              allowfullscreen
             ></iframe>
           </div>
         </div>
